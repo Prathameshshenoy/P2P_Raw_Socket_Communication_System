@@ -254,35 +254,6 @@ lsof -p $(pgrep python3)
 4. When complete, chunks reassembled into final file
 5. Temporary files cleaned up automatically
 
-## Security Notes
-
-This implementation prioritizes functionality over security:
-- **No encryption** - All data sent in plaintext
-- **No authentication** - No verification of sender identity
-- **Raw socket access** - Requires root privileges
-- **Network exposure** - Listens on all interfaces
-
-For production use, consider adding:
-- TLS/AES encryption
-- Authentication tokens
-- Access control lists
-- Rate limiting
-- Input validation
-
-## Performance
-
-### Benchmarks (Local Network)
-- Message latency: ~1-5ms
-- File transfer: ~1MB/s for small files
-- CPU usage: <5% during normal operation
-- Memory usage: ~10MB base + file size for transfers
-
-### Optimization Tips
-- Increase `CHUNK_SIZE` for large files
-- Adjust `RETRY_TIMEOUT` based on network conditions
-- Use dedicated network interface for high throughput
-- Monitor `processed_packets` set size for memory usage
-
 ## Development
 
 ### Running Tests
@@ -297,12 +268,6 @@ sudo python3 stress_test.py
 sudo python3 multi_peer_test.py
 ```
 
-### Contributing
-1. Fork the repository
-2. Create feature branch: `git checkout -b feature-name`
-3. Test changes thoroughly with `sudo python3 setup.py`
-4. Ensure compatibility with Python 3.6+
-5. Submit pull request with clear description
 
 ## License
 
