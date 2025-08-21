@@ -16,7 +16,7 @@ A lightweight peer-to-peer protocol built on raw IP sockets, with reliable messa
 
 1. **Clone & setup**
 ```bash
-git clone https://github.com/Prathameshshenoy/P2P_Custom_Raw_Socket.git
+git clone https://github.com/Prathameshshenoy/P2P_Raw_Socket_Communication_System.git
 cd raw-socket-communication
 sudo python3 setup.py
 ```
