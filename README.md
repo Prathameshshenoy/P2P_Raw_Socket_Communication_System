@@ -28,7 +28,7 @@ sudo python3 raw_socket_server.py
 
 3. **Use the client**
 ```bash
-sudo python3 client_example.py interactive
+sudo python3 client.py interactive
 ```
 
 ---
@@ -55,9 +55,9 @@ Commands:
 
 ### Client Library
 ```bash
-sudo python3 client_example.py interactive
-sudo python3 client_example.py example
-sudo python3 client_example.py discover
+sudo python3 client.py interactive
+sudo python3 client.py example
+sudo python3 client.py discover
 ```
 
 ### Programmatic
