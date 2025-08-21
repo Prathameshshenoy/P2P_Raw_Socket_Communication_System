@@ -149,14 +149,5 @@ print(get_received_messages(timeout=2))
 
 ---
 
-## Development
-```bash
-sudo python3 -m pytest test_raw_socket.py
-sudo python3 stress_test.py
-sudo python3 multi_peer_test.py
-```
-
----
-
 ## License
 MIT License – see LICENSE.
